@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'popins',sans-serif;
+  }
+body{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(to bottom, #68eacc 0%, #497be8) ;
+}
+.wrapper{
+	margin: 120px auto;
+	max-width: 400px;
+	width: 100%;
+	background: #fff;
+	border-radius: 5px;
+	padding: 25px;
+}
+.wrapper header{
+	font-size: 30px;
+	font-weight: 600;
+}
+.wrapper .inputField{
+	display: flex;
+	height: 45px;
+	width: 100%;
+	margin: 20px 0;
+}
+.inputField input{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ccc;
+	font-size: 17px;
+	border-radius: 3px;
+	padding-left: 15px;
+}
+.inputField button{
+	width: 60px;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: #8e49e8;
+	color: #fff;
+	font-size: 22px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.wrapper .todoList{
+	overflow-y: auto;
+	width: 100%;
+	height: 45px;
+	border: 1px solid #ccc;
+	font-size: 17px;
+	border-radius: 3px;
+	padding-top: 10px;
+	
+}
+.todoList li{
+	list-style: none;
+	height: 45px;
+	line-height: 45px;
+	position: relative;
+	background: #f2f2f2;
+	border-radius: 3px;
+	margin-bottom: 8px;
+	padding: 0 15px;
+	cursor: default;
+	overflow: hidden;
+}
+.todoList li span{
+	position: absolute;
+	right: -45px;
+	color: #fff;
+	width: 45px;
+	text-align: center;
+	background: red;
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.todoList li:hover span{
+	right: 0px;
+}
+.wrapper .footer{
+	display: flex;
+	width: 100%;
+	align-items: center;
+	margin-top: 20px;
+	justify-content: space-between;
+}
+.footer button{
+	border: none;
+	outline: none;
+	background: #8e49e8;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 3px;
+	padding: 6px 10px;
+}
+
+.todoList button {
+	width: 53px;
+	height: 45px;
+	border: none;
+	outline: none;
+	background: #8e49e8;
+	color: #fff;
+	font-size: 22px;
+	cursor: pointer;
+	border-radius: 3px;
+	position: fixed;
+	left: 58.5%;
+	margin-top: -11px;
+}
